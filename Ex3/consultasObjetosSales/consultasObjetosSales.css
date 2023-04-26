@@ -1,0 +1,13 @@
+table tr th{
+    border: 1px solid black;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: blue;
+}
+.cabe{
+    background-color: gray;
+}
+
+table{
+    border-radius: 20px;
+}

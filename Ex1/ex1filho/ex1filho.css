@@ -1,0 +1,18 @@
+h1{
+    color: red;/*O que faz aqui no filho vai lá para o pai dele que top*/
+    font-size: large;
+    background-color: black;
+    text-align: center;
+}
+
+h1:hover{
+    color:white;
+}
+.filho{
+    color: red;
+    background-color: white;
+    text-align: center;
+}
+.filho:hover {
+    background-color: black;
+}

@@ -1,0 +1,26 @@
+<template>
+    <lightning-card title="Teste trazendo alguns Leads"><!--Renan e Lorena fiz um pouco diferente essa questão trazendo do Obj Lead do sistema-->
+        <div class="slds-m-around_small"><!--Só para colocar uma margem marota peguei no lightinig Desing-->
+            <template if:true={leads.data}><!--Só vai receber os meus dados se caso carregar a lista do Objeto Lead-->
+                <table>
+                    <thead class="cabe"><!--Cabeçalho da minha tabela nesse caso coloquei manualmente-->
+                        <tr>
+                            <th>Nome</th>
+                            <th>Telefone</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <template for:each={leads.data} for:item="lead"><!--Vai rodar em cima da minha lista Lead que foi pega no APEX-->
+                            <tr key={lead.Id}><!--Cada linha pega um id de lead ou seja vai exibir um Lead por página-->
+                                <th>{lead.Name}</th><!--.(dot) para acessar o campo no objeto obs tem que ser igual a API do Obj do Sales-->
+                                <th>{lead.Phone}</th><!--Lembrete para minha pessoa em um futuro proximo de for personalizado usar __c-->
+                                <th>{lead.Email}</th>
+                            </tr>
+                        </template><!--O template com o for Each vai rodar em cada registro do meu obj Lead aí criar uma linha com os campos selecionados-->
+                    </tbody>
+                </table>
+            </template>
+    </div>
+    </lightning-card>
+</template>

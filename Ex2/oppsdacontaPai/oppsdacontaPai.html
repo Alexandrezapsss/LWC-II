@@ -1,0 +1,12 @@
+<template><!--Aqui é o pai ele vai chamar o filho dele-->
+    <lightning-card title="App Pai do Ex2">
+        <!--Abaixo estamos chamando o coponente filho porem passado caracteristicas aos campos(variavel criada @api) que foram trazidas do filho-->
+        <c-oppsdaconta id="1" nome="Alexandre" valor="300,00" fase="Quente"></c-oppsdaconta><!--Cuidado com o nome-->
+        <c-oppsdaconta id="2" nome="Beatriz" valor="100,00" fase="Quente"></c-oppsdaconta>
+        <c-oppsdaconta id="3" nome="Edileuza" valor="200,00" fase="Quente"></c-oppsdaconta>
+        <c-oppsdaconta id="4" nome="Laedio" valor="600,00" fase="Quente"></c-oppsdaconta>
+        <c-oppsdaconta id="5" nome="Scooby" valor="700,00" fase="Quente"></c-oppsdaconta>
+        <!--Cuidado com o nome pois se o filho se chamar: componenteFilho.html o chame no cai assim <c-componente-Filho></c-componente-Filho>-->
+        <!--Ele diferencia o nome do componente minusculas e maiuscula por isso que usamos (-) para informar o nome se o nome ofr minusculo chame normal-->
+    </lightning-card>
+</template>
